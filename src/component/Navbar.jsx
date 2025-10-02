@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return <div className="absolute p-4 top-0  w-full">
-    <span className="p-5  font-bold text-2xl" style={{ color: 'var(--theme-color)' }}>Kanban Board</span>
+    <div className="px-5 py-1 font-bold text-3xl" style={{ color: 'var(--theme-color)' }}>SprintBoard</div>
   </div>;
 };
 
