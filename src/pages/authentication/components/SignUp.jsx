@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../component/Navbar";
+import Navbar from "../../../component/Navbar";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
@@ -44,7 +44,7 @@ const SignUp = () => {
       <Navbar />
       <div className="shadow-lg p-7 w-1/3 py-5 bg-white rounded-2xl">
         <div className="flex flex-col text-1xl p-1  pb-7">
-          <span className="text-4xl py-2">SingUp</span>
+          <span className="text-4xl py-2">SignUp</span>
           <span className=" font-medium text-sm" style={{ color: 'var(--theme-color)' }}>
             To Kanban Board
           </span>
