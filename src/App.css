@@ -1,0 +1,10 @@
+.sidebar {
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+  display: none;
+}
+
+.sidebar-open {
+    display: block;
+  transform: translateX(0);
+}

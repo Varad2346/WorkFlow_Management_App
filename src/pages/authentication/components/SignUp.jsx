@@ -85,7 +85,7 @@ const SignUp = () => {
           </div>
         
         </div>
-        <div className="text-center  p-2 my-2 text-white" onClick={()=>handleSubmit()} style={{ backgroundColor: 'var(--theme-color)' }}>
+        <div className="text-center  p-2 my-2 text-white cursor-pointer" onClick={()=>handleSubmit()} style={{ backgroundColor: 'var(--theme-color)' }}>
           <span >SignUp</span>
         </div>
         <div className="text-center p-4">

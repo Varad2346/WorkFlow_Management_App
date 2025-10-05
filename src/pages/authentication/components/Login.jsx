@@ -29,6 +29,8 @@ const Login = () => {
 
       const data = await response.json();
       if (data.success) {
+        localStorage.removeItem("token")
+        localStorage.setItem("token",data.token);
         dispatch(loginSuccess(data));
         navigate("/home");
       } else {
@@ -42,7 +44,7 @@ const Login = () => {
   return (
     <div className="container relative  w-screen h-screen  grid place-items-center bg-[linear-gradient(to_right,white_50%,theme(colors.blue.500)_50%)]">
       <Navbar />
-      <div className="shadow-lg p-7 w-1/3 py-10 bg-white rounded-2xl">
+      <div className="shadow-lg p-6 w-1/3 py-10 bg-white rounded-2xl">
         <div className="flex flex-col text-1xl py-1 pb-7">
           <span className="text-3xl">Login</span>
           <span>Hi, Welcome Back 👋</span>
@@ -70,7 +72,7 @@ const Login = () => {
           </div>
         </div>
         <div
-          className="text-center  p-2 my-2 text-white"
+          className="text-center  p-2 my-2 text-white cursor-pointer"
           style={{ backgroundColor: "var(--theme-color)" }}
           onClick={() => handleSubmit()}
         >

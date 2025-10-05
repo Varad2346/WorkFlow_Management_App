@@ -3,7 +3,7 @@ import {Routes,Route} from "react-router-dom"
 import Login from "./pages/authentication/components/Login";
 import "./App.css"
 import SignUp from "./pages/authentication/components/SignUp";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 
 const App = () => {
   return <Routes>

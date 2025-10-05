@@ -1,8 +1,8 @@
 import {createSlice} from "@reduxjs/toolkit"
 
 const initialState={
-    user:'varad',
-    token:null,
+    user:null,
+    token:localStorage.getItem("token"),
     isloading:false
 }
 
@@ -16,7 +16,7 @@ const authSlice=createSlice({
         },
         logOut:(state)=>{
             state.user=null;
-            state.token=null
+            state.token=null;
         }
     }
 })
